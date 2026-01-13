@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+@font-face {
+    font-family: "Fugaz One",  system-ui;
+    src: url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+ }
+ @keyframes logosty{
+    from{
+
+    }
+    to{
+        background-image: linear-gradient(white,red,white,blue,white)
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.outercontainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(shirtbg.png);
+    background-size: cover;
+    background-position: center;
+}
+.div1{
+    width: 100vw;
+    height: 100%;
+    border: 2px solid ;
+    background-color: rgb(0, 0, 0, 0.4);
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(148, 122, 175, 0.4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: visible;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+   font-family: "Fugaz One",  system-ui;
+}
+nav a:hover{
+    color: black;
+    font-size: 35px;
+}
+.logo a{
+    background-image: linear-gradient(white,blue,white,red,white);
+    background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation-name: logosty;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    
+}
+.search{
+    width: 450px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+}
+input[type='search']{
+    background-color: transparent;
+    width: 420px;
+    height: 40px;
+    margin-left: 30px;
+    border: none;
+    color: brown;
+    border-color: white;
+}
+input::placeholder{
+color:wheat;
+font-size: larger;
+border-bottom: white;
+}
+.search img{
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    
+    
+}
+.signin a{
+    font-size: 25px;
+}
+.cart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cart img{
+    width: 20px;
+}
+
+/*  */
+/* fieldset{
+    position: absolute;
+    margin-top: 90px;
+} */
+
+.btn{
+    background-color: aquamarine;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    margin-left: 90%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 0px 0px 25px;
+}
+.btn a{
+    color: black;
+    text-decoration: none;
+}
+.btn a:hover{
+    color: crimson;
+    font-size: large;
+    transform: scale(20px);
+}
+.form{
+    position: relative;
+    /* margin-top: 0px; */
+    width: 800px;
+    /* height: 400px; */
+    background-color: aquamarine;
+    margin-bottom:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.f1{
+    position: absolute;
+    width: 300px;
+    height:600px ;
+    background-color: blue;
+    /* float: left; */
+}
+.f1_1{
+    width: 100%;
+    height: 500px;
+    /* border: 2px solid; */
+    
+}
+.f1_1 h3,p{
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 25px;
+}
+.f1 p{
+    display: flex;
+    justify-content: center;
+}
+.f1 a{
+    text-decoration: none;
+    color: white;
+    animation-name: logosty;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        background-image: linear-gradient(blue,white,red);
+    background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+}
+.f2{
+    /* position: absolute; */
+    width: 500px;
+    height: 600px;
+    background-color: cadetblue;
+    float: right;
+    display: flex;
+    flex-direction: column;
+
+}
+input[type='email']{
+    border: none;
+    background-color: transparent;
+    border-color: transparent;
+    width: 80%;
+}
+input[placeholder='Enter Email/Mobile Number']{
+    border-color: transparent;
+}
+.f2_1{
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+    height: 300px;
+    /* border: 2px solid red; */
+    font-size: larger;
+}
+.f2 a{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.f2_1 p{
+    margin-top: 30px;
+    font-size: 15px;
+    
+}
+.f2_1 button{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.cartbox{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 255, 255); */
+    background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-7359557-6024626.png);
+    background-repeat: no-repeat;
+    
+    background-position: center;
+}
+.cartbox p{
+    color: white;
+    font-size: 50px;
+}
+.cartbox p:last-of-type{
+    /* margin:0px auto;
+    margin-bottom: 5px;
+    margin-top: 470px; */
+    margin:470px 30px 10px 480px ;
+}
